@@ -1,0 +1,423 @@
+
+/* Css Styles                        */
+
+/**
+	Author : Arpit Satnalika
+	Copyright 2020
+/* Table of Content
+==================================================
+	
+	1. Body and Core Css
+	2. Header
+    3. Home Section
+    4. About
+    5. Portfolio
+    6. Portfolio Detail
+    7. Team
+    8. Blog
+    9. Clients
+    10. Contact
+    11. Footer
+    12. Responsive
+/*------------------------ 1 Body and Core Css ------------------------*/
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.img1 {
+    width: 80px;
+    height: 80px;
+    background: url() no-repeat scroll 0 0;
+}
+
+html {
+    height: 100%;
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+}
+
+@-moz-document url-prefix() {
+    body {
+        font-weight: lighter!important;
+    }
+}
+
+::-moz-selection {
+    background: #000;
+    color: #fff;
+}
+
+
+/* Margins */
+
+/* Typoghraphy */
+
+h3 {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+h4 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+h5 {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1.2px;
+    line-height: 38px;
+}
+
+
+/* Buttons */
+.top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 1;
+    font-size: 15px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    height: 29px;
+    width: 29px;
+    border-radius: 50px;
+  }
+  
+  .top-btn:hover {
+    background-color: rgb(255, 121, 12);
+  }
+
+/*------------------------ 2 Header ------------------------*/
+
+
+/** Navigation **/
+
+header .navbar.full-nav .rspbtn button {
+    color: #fff;
+}
+
+@media (min-width:992px) {
+    header {
+        position: absolute;
+        width: 100%;
+    }
+    header .navbar nav {
+        display: block!important;
+        float: right;
+    }
+    header .navbar.full-nav nav ul li a {
+        color: #fff;
+        padding: 24px 12px 18px 12px;
+        font-size: 18px;
+    }
+    header .navbar nav ul li a:hover,
+    header .navbar nav ul li a:active,
+    header .navbar nav ul li a:focus {
+        background: none;
+    }
+    /* Menu Hover Animations */
+}
+
+
+/* Menu Responsive */
+
+@media (max-width: 991px) {
+    header {
+        position: absolute;
+        width: 100%;
+    }
+    header .navbar.full-nav nav {
+        left: 8px;
+        right: 14px;
+        top: 2px;
+        position: absolute;
+        z-index: 10;
+        background-color: #fff;
+        box-shadow: 0 20px 45px rgba(0, 0, 0, .08);
+    }
+    header .navbar nav ul {
+        position: relative;
+        width: 100%;
+        box-shadow: none;
+        border: 0;
+        margin-top: -3px;
+        border-radius: 0;
+        padding: 0;
+    }
+    header .navbar nav ul li {
+        float: none;
+        margin: 0;
+        border-bottom: 1px solid #dfdfdf;
+        margin-left: 10px;
+    }
+    header .navbar nav ul li a {
+        font-size: 13px;
+        border-radius: 0;
+        display: inline-block;
+        width: 100%;
+        padding: 12px 15px;
+        color: #000;
+    }
+    header .navbar nav ul li a:hover,
+    header .navbar nav ul li a:focus {
+        background: none;
+    }
+    .full-nav .rspbtn button {
+        background: none;
+        border: 0;
+        padding: 23px 12px;
+        text-align: right;
+        float: right;
+    }
+}
+/*-----------------------  Login Popup --------------------------*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  
+  /* The Close Button */
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 31.5%;
+    top: 18%;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+ /* Social Login Form */
+.gradient1{
+    background: #36b6d2;
+    background: linear-gradient(19deg, #36b6d2 0%, #541771 100%);
+    color: white;
+    padding: 5%;
+    align-items: center;
+    height: 30%;
+}
+.gradient3{
+    background: rgb(2,0,36);
+    background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(56,9,121,1) 29%, rgba(0,212,255,1) 100%);
+    text-align: center;
+    color: white;
+    padding: 5%;
+    align-items: center;
+}
+/*------------------------ 3 Home Pages ------------------------*/
+
+a {
+    color: black;
+}
+
+
+.cloud-header {
+    background-image: url(https://source.unsplash.com/random);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 240px;
+    overflow: hidden;
+    width: 100%;
+    display: table;
+    position: relative;
+    margin-bottom: -139px;
+    top: 0;
+    text-align: center;
+    color:white;
+}
+
+
+/* Agency Home */
+
+
+/*------------------------ 4 About ------------------------*/
+
+.about_form {
+    width: 49.5%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.about_form1 {
+    background-color: #FF790C;
+    color: white;
+    padding: 0px 20px;
+    cursor: pointer;
+    margin-left: 0px;
+    border-radius: 24px;
+    border-color: #FF790C;
+    border: none;
+    width: auto;
+    display: block;
+    height: 48px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+.about_form1:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    border-color: black;
+}
+
+
+/* Style the buttons */
+
+
+/* Type 2 */
+
+
+/* Vertiqal */
+
+
+/*------------------------ 5 Portfolio ------------------------*/
+
+
+/* Type 1 */
+/*------------------------  6.Testimonials ------------------------*/
+.paper-card3{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5%;
+    text-align: center;
+}
+.paper-card5{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2%;
+    background-color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+
+/* Style the buttons */
+
+
+/* Portfolio Filter Type 2 */
+
+
+/*------------------------ 7 Services ------------------------*/
+
+/*------------------------ 8 Blog ------------------------*/
+
+.blogs button {
+    display: inline-block;
+}
+
+#preloader {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: table;
+    text-align: center;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    animation: spinner .6s linear infinite;
+}
+/*------------------------ 9 jobs ------------------------*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/*------------------------ 10 Contact ------------------------*/
+
+
+/*------------------------ 11 Policy ------------------------*/
+
+/*------------------------ 12 Footer ------------------------*/
+
+ul li {
+    color: rgb(190, 190, 190);
+}
+
+ul li:hover {
+    color: orange;
+}
+
+input {
+    width: 200px;
+}
+
+
+/*------------------------ 13 Responsive ------------------------*/
+
+
+/* Tablet Version */
+
+@media (max-width: 767px) {
+    h5 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+}
+
+
+/* Mobile Version */
+
+@media (max-width: 576px) {
+    h5 {
+        font-size: 20px;
+        line-height: 29px;
+    }
+}
